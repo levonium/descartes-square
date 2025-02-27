@@ -39,19 +39,19 @@ export const appendEventToSquare = (event: LifeEvent, square: HTMLElement) => {
   wrapper.classList.add('event', 'flex', 'items-center', 'mb-2')
 
   const value = document.createElement('input')
-  value.classList.add('value', 'w-8', 'mr-2', 'text-center', 'text-slate-900', 'bg-amber-50')
+  value.classList.add('value', 'w-12', 'text-center', 'text-slate-900', 'bg-blue-200')
   value.value = event.value.toString()
   wrapper.appendChild(value)
 
   const desc = document.createElement('input')
   desc.value = event.desc
   const colors = event.value > 0 ? COLORS.positive : COLORS.negative
-  desc.classList.add('desc', 'h-7', 'flex-1', 'mr-2', 'pl-2', ...colors)
+  desc.classList.add('desc', 'h-7', 'w-[calc(100%-76px)]', 'pl-2', ...colors)
   wrapper.appendChild(desc)
 
   const button = document.createElement('button')
   button.innerHTML = '&times;'
-  button.classList.add('remove-event', 'h-7', 'flex', 'items-center', 'px-2', 'border-none', 'bg-white', 'text-amber-800')
+  button.classList.add('remove-event', 'h-7', 'flex', 'items-center', 'px-2', 'border-none', 'bg-blue-200', 'text-amber-800')
   wrapper.appendChild(button)
 
   square.querySelector('.events').appendChild(wrapper)
