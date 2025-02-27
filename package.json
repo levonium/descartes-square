@@ -1,0 +1,18 @@
+{
+  "name": "descartes-square.levon.dev",
+  "version": "1.0.0",
+  "scripts": {
+    "css": "npx @tailwindcss/cli -i src/app.css -o app.css --watch",
+    "css-build": "npx @tailwindcss/cli -i src/app.css -o app.css --bundle --minify",
+    "js": "esbuild ./src/app.ts --bundle --watch --outfile=app.js",
+    "js-build": "esbuild ./src/app.ts --bundle --outfile=app.js"
+  },
+  "author": "levonium",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "esbuild": "0.25.0",
+    "tailwindcss": "^4.0.9"
+  }
+}

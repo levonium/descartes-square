@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+@theme {
+  --font-display: "Bricolage Grotesque", sans-serif;
+
+  --color-blue-50: #f3f4fb;
+  --color-blue-100: #e3e7f6;
+  --color-blue-200: #ced5ef;
+  --color-blue-300: #acb9e4;
+  --color-blue-400: #8496d6;
+  --color-blue-500: #6674cb;
+  --color-blue-600: #535bbd;
+  --color-blue-700: #484bad;
+  --color-blue-800: #434395;
+  --color-blue-900: #373871;
+  --color-blue-950: #252546;
+}
